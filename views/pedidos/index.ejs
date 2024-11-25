@@ -1,0 +1,5 @@
+<ul>
+    <%pedidos.map((pedido) => {%>
+        <li>Pedido do <%= pedido.cliente.nome %> <%= pedido.cliente.sobrenome %></li>
+    <% }) %>
+</ul>

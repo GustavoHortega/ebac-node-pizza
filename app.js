@@ -13,11 +13,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //Routes
-app.use('/pedidos', routerPedidos0);
+app.use('/pedidos', routerPedidos);
 app.use('/', routerPrincipal);
 
 app.listen(porta, () => {
     connect();
 
-    consolelog('Servidor ouvindo na porta ', porta);
+    console.log('Servidor ouvindo na porta ', porta);
 })

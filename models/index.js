@@ -1,5 +1,7 @@
 const mongoose =  require('mongoose');
-const Pedido = require('./pedido');
+const pedidoSchema = require('./pedido');
+
+const Pedido = mongoose.model('Pedido', pedidoSchema)
 
 const connect = () =>{
     mongoose.connect('mongodb://localhost:27017/ebacpizza')
@@ -7,6 +9,5 @@ const connect = () =>{
 
 module.exports = {
     connect,
-    
-    Pedido
+    Pedido,
 }
