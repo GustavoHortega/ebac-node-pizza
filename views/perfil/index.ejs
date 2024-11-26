@@ -1,0 +1,10 @@
+<h2>perfil</h2>
+<h3>Informações pessoais:</h3>
+<div style="background-color: brown; display: flex; width: 200px;">
+    <ul>
+        <% perfil.forEach((perfil) => { %>
+        <p style="color: white">Nome: <%= perfil.dadosPessoais.nome %></p>
+        <p style="color: white">Idade: <%= perfil.dadosPessoais.idade %></p>
+        <% }) %>
+    </ul>
+</div>

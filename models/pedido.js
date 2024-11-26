@@ -41,6 +41,7 @@ const Pedido = new Schema({
     pago:{
         type: Boolean,
         required: true,
+        
         default: false
     }
 });

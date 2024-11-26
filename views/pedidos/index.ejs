@@ -1,5 +1,10 @@
 <ul>
-    <%pedidos.map((pedido) => {%>
-        <li>Pedido do <%= pedido.cliente.nome %> <%= pedido.cliente.sobrenome %></li>
+    <% pedidos.forEach((pedido) => { %>
+        <p>Pedido do <%= pedido.cliente.nome %>  <%= pedido.cliente.sobrenome %> || Pago: <%= pedido.pago %> </p>
+        <h3>------Sabores:</h3>
+        <% pedido.pizzas.forEach((pizza) => { %>
+            <p><%= pizza.sabor%>: <%=pizza.tamanho%></p>
+        <% }) %>
+        <p>------------------------------------------------------------------------------------</p>
     <% }) %>
 </ul>
