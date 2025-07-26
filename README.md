@@ -34,5 +34,5 @@ npm install
    ```terminal
    npm start
    ```
-5. No acesse as rotas para ver os dados na tela.
+5. No navegador acesse as rotas para ver os dados na tela.
 
