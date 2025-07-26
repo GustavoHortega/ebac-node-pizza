@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 //Routes
 app.use('/pedidos', routerPedidos);
-app.use('/perfil', routerPerfil)
+app.use('/perfil', routerPerfil);
 app.use('/', routerPrincipal);
 
 app.listen(porta, () => {
